@@ -4,28 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audio Player</title>
-  <style>
-    #audioPlayer {
-      display: none;
-    }
-  </style>
 </head>
 <body>
-  <audio id="audioPlayer">
-    <source src="https://www.dropbox.com/scl/fi/medl6j102bawmf2eyl6xb/ZICO-SPOT-feat-JENNIE-Official-Audio.mp3?rlkey=8w0czop5dw0nxznvx6suc0vr5&st=9lujra7e&raw=1" type="audio/mpeg">
+  <audio id="audioPlayer" controls>
+    <source src="https://www.dropbox.com/scl/fi/bfpvbx76gwcnlhskku776/audioPlayer.html?rlkey=70pwgcpyq1crnk180fk75fb4k&st=ashnmoov&raw=1" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
   <script>
-    var audioPlayer = document.getElementById('audioPlayer');
-
-    window.addEventListener('message', function(event) {
-      if (event.data === 'play') {
-        audioPlayer.play();
-      } else if (event.data === 'pause') {
-        audioPlayer.pause();
-      }
-    });
+    // JavaScript to play the audio automatically or control playback
+    document.getElementById('audioPlayer').play();
   </script>
 </body>
 </html>
